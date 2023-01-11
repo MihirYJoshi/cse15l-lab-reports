@@ -14,9 +14,11 @@ I was then logged in and was welcomed. I saw some information on CPU usage and C
 
 <img width="735" alt="Screenshot 2023-01-11 at 11 25 52 AM" src="https://user-images.githubusercontent.com/43663025/211924120-66858875-37d0-4041-b51c-e76b03b54594.png">
 
-I then created a new folder called folder1 in the home where I used the terminal commands to run python and print txt files. I also copied, moved, and removed the files around the folder
+I then created a new folder called folder1 in the home where I was planning on running the terminal commands to run python and print txt files. I did pwd to find my current directory and cd to change to the home directory. I created a python file that prints hello world using vi and then used python to run the file. THis printed out hello world. I then removed the file and listed the files out. I then did cd.. to return to the source folder and created a new hello world file outside the folder.
 
 <img width="514" alt="Screenshot 2023-01-11 at 12 10 02 PM" src="https://user-images.githubusercontent.com/43663025/211921222-ce54ab67-ff25-4b8a-9cab-56c31608222f.png">
+
+I then changed into folder1, removed the hello world file that was inside and moved the hello world text file that i created into the folder from the home directory. After returning to the home directory and printing the present working directory, I printed all the files on my account (including hidden) using ls-lat and my current files (without hidden) and info using ls-ltr. I then used -a to print hidden files. I then used cat to print hello.txt
 
 ![Screenshot 2023-01-11 at 1 19 49 PM](https://user-images.githubusercontent.com/43663025/211921207-38039b0f-a226-4590-b022-02584b64c207.png)
 
