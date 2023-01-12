@@ -22,4 +22,12 @@ I then changed into folder1, removed the hello world file that was inside and mo
 
 ![Screenshot 2023-01-11 at 1 19 49 PM](https://user-images.githubusercontent.com/43663025/211921207-38039b0f-a226-4590-b022-02584b64c207.png)
 
+I did cd .. to exit the folder and ran an ls command to list all the other computers that are on the server. However, I cannot connect to those servers because I do not have the permission to do so.
+
+<img width="578" alt="Screenshot 2023-01-12 at 2 19 00 PM" src="https://user-images.githubusercontent.com/43663025/212193559-9b2b777b-85bc-418b-986b-a9889e23ab1d.png">
+
+I also copied hello.txt from the outside folder on to my computer and ran a cat command to display the files' contents
+
+<img width="563" alt="Screenshot 2023-01-12 at 2 16 21 PM" src="https://user-images.githubusercontent.com/43663025/212193667-8e49b2c0-213b-430e-aecf-7748c95bb022.png">
+
 
