@@ -3,7 +3,7 @@ I did not install VS Code on my computer because I had already had it installed.
 
 <div></div>
 
-![Screenshot 2023-01-11 at 1 35 36 PM](https://user-images.githubusercontent.com/43663025/211922805-172fc8bb-2d2a-4fc5-b552-fd541ede7a2c.png)
+![img](https://user-images.githubusercontent.com/43663025/211922805-172fc8bb-2d2a-4fc5-b552-fd541ede7a2c.png)
 
 Remotely Connecting to the Server:
 I first ssh into the server with my account name. The name is cs151wi23aio and I needed to add @ieng6.ucsd.edu as that is the server that I needed to ssh into. I entered yes because it was my first time. I then entered the password assiciated with it.
