@@ -1,11 +1,12 @@
-Installing VS Code:
-I did not install VS Code on my computer because I had already had it installed. When I first installed it, I went to VS Code's website and downloaded the file that I needed for my Macbook. I then unzipped the application and dragged it to my application folder. I have used VS Code to clone repositories and commit changes that I have made to code in my other projects.
+The First Step is to Install VS Code:
+To install VS Code, one must first go to their website and download the correct file for their computer. This is the link to the VS Code downloading website: https://code.visualstudio.com/. After going through the download button, one will see the screen with the different Operating Systems and their corresponding downloads. The image is shown below.
+<img width="1080" alt="Screenshot 2023-01-25 at 1 23 41 PM" src="https://user-images.githubusercontent.com/43663025/214694104-6df92558-d57d-453d-a3ed-234575e7f275.png">
 
-<div></div>
+Once this is downloaded, open VS Code. Once it is open, one should see the following screen. This means that it is working and has been downloaded properly.
 
 ![img](https://user-images.githubusercontent.com/43663025/211922805-172fc8bb-2d2a-4fc5-b552-fd541ede7a2c.png)
 
-Remotely Connecting to the Server:
+The Second Step is to Remotely Connect to the Server:
 I first ssh into the server with my account name. The name is cs151wi23aio and I needed to add @ieng6.ucsd.edu as that is the server that I needed to ssh into. I entered yes because it was my first time. I then entered the password assiciated with it.
 
 <img width="573" alt="Screenshot 2023-01-11 at 11 20 30 AM" src="https://user-images.githubusercontent.com/43663025/211921210-3f7ca91d-4263-41e2-806f-ab4123028d41.png">
