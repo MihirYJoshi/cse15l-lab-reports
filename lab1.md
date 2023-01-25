@@ -10,7 +10,7 @@ To open the terminal in VS Code, simply drag the blue bar from the bottom of the
 <img width="424" alt="Screenshot 2023-01-25 at 1 27 42 PM" src="https://user-images.githubusercontent.com/43663025/214694924-b7815ac3-1776-42ed-948c-2a3ff2fd20cc.png">
 
 The Second Step is to Remotely Connect to the Server:
-First ssh into the server with your account name. The name is `cs151wi23zz` with the zz replaced with ones personal code. Add @ieng6.ucsd.edu as that is the server that one would need to ssh into. One must type in yes if it is ones first time. Then enter the password assiciated with the account.
+First ssh into the server with your account name. The name is `cs151wi23zz` with the zz replaced with ones personal code. Add @ieng6.ucsd.edu as that is the server that one would need to `ssh` into. One must use the command `ssh cs151wi23zz@ieng6.ucsd.edu` to connect to the server. One must type in yes if it is ones first time. Then enter the password assiciated with the account.
 
 <img width="573" alt="Screenshot 2023-01-11 at 11 20 30 AM" src="https://user-images.githubusercontent.com/43663025/211921210-3f7ca91d-4263-41e2-806f-ab4123028d41.png">
 
@@ -29,7 +29,7 @@ One may use `cd ..` to exit the folder and run an `ls` command to list all the o
 
 <img width="578" alt="Screenshot 2023-01-12 at 2 19 00 PM" src="https://user-images.githubusercontent.com/43663025/212193559-9b2b777b-85bc-418b-986b-a9889e23ab1d.png">
 
-One can also copy hello.txt from the outside folder on to one's computer using `cp` and run a `cat` command to display the files' contents
+One can also copy hello.txt from the outside folder on to one's computer using `cp` and listed the directory and ran a `cat` command to display the files' contents
 
 <img width="563" alt="Screenshot 2023-01-12 at 2 16 21 PM" src="https://user-images.githubusercontent.com/43663025/212193667-8e49b2c0-213b-430e-aecf-7748c95bb022.png">
 
