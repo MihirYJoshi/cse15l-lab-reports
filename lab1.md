@@ -3,8 +3,11 @@ To install VS Code, one must first go to their website and download the correct 
 <img width="1080" alt="Screenshot 2023-01-25 at 1 23 41 PM" src="https://user-images.githubusercontent.com/43663025/214694104-6df92558-d57d-453d-a3ed-234575e7f275.png">
 
 Once this is downloaded, open VS Code. Once it is open, one should see the following screen. This means that it is working and has been downloaded properly.
-
 ![img](https://user-images.githubusercontent.com/43663025/211922805-172fc8bb-2d2a-4fc5-b552-fd541ede7a2c.png)
+
+To open the terminal in VS Code, simply drag the blue bar from the bottom of the screen or right-click on a file and click on "Open in Integrated Terminal" to start the terminal as shown below.
+<div></div>
+<img width="424" alt="Screenshot 2023-01-25 at 1 27 42 PM" src="https://user-images.githubusercontent.com/43663025/214694924-b7815ac3-1776-42ed-948c-2a3ff2fd20cc.png">
 
 The Second Step is to Remotely Connect to the Server:
 I first ssh into the server with my account name. The name is cs151wi23aio and I needed to add @ieng6.ucsd.edu as that is the server that I needed to ssh into. I entered yes because it was my first time. I then entered the password assiciated with it.
