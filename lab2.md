@@ -1,5 +1,9 @@
+Part 1:
 
-Part 2
+
+
+
+Part 2:
 
 Reverse in Place
 <div></div>
@@ -41,6 +45,6 @@ In order to solve this issue, one must create the copy of the array and then ite
 <img width="396" alt="Screenshot 2023-01-26 at 2 43 14 PM" src="https://user-images.githubusercontent.com/43663025/214967368-f7734e2b-330a-4ef4-93ef-42f41576968a.png">
 
 
-Learnings:
+Part 3:
 
 I learned techniques that I can use int he future to debug my code when I have errors. I learned how to use Junit effectivley to ensure that my code ran smoothly. These techniques would be an incredibly valueable asset for me in my future.
