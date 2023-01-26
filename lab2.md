@@ -25,12 +25,12 @@ This test has a longer array as an imput. The input that fails is `int[] input1 
 
 Symptom:
 
-Because of this error, one will see that the last term is copied once more to the first one, showing that it failed to reverse
+Because of this error, one will see that the last term is copied once more to the first one, showing that it failed to reverse. This is because the code references a segment that has already been changed when it reaches the point where it needed to add items to the array.
 <img width="367" alt="Screenshot 2023-01-26 at 2 37 59 PM" src="https://user-images.githubusercontent.com/43663025/214966587-db56f86c-0758-428c-a154-74a9f4bd067b.png">
 
 Solution:
 
-In order to solve this issue, one must create the copy of the array and then iterate through both arrays to replace the first item in the main array with the corresponding item from the end from the copy array. One should add this code to create a copy of the array.
+In order to solve this issue, one must create the copy of the array and then iterate through both arrays to replace the first item in the main array with the corresponding item from the end from the copy array. One should add this code to create a copy of the array. This would fix ones issue because it would allow one to iterate through the array without the potential for accidently duplicating the values at the end of the array into the beginning of the array.
 
        int[] copy = new int[arr.length];
        for(int i = 0; i < arr.length; i += 1) {
