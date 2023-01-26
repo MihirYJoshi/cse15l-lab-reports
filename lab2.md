@@ -20,6 +20,7 @@ Part 2:
 Reverse in Place
 <div></div>
 This is the original code for Reverse in Place:
+<div></div>
 <img width="338" alt="Screenshot 2023-01-26 at 2 18 53 PM" src="https://user-images.githubusercontent.com/43663025/214963555-b18202c1-bd02-45c8-b54e-46ee15a918f6.png">
 
 This code will fail because it will replace all the values that it will eventially need to replace the ending with in the beginning. This code will not be able to make an accurate copy. To test whether this code will fail, one would need to write a test that involves a long array that the function needs to iterate through.
