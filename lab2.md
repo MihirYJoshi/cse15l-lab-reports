@@ -23,6 +23,12 @@ This test has a longer array as an imput. The input that fails is `int[] input1 
 <div></div>
 <img width="1145" alt="Screenshot 2023-01-26 at 2 16 36 PM" src="https://user-images.githubusercontent.com/43663025/214963163-4c77ad99-e52f-473f-9f0f-706b90d9a758.png">
 
+Symptom:
+
+Because of this error, one will see that the last term is copied once more to the first one, showing that it failed to reverse
+<img width="367" alt="Screenshot 2023-01-26 at 2 37 59 PM" src="https://user-images.githubusercontent.com/43663025/214966587-db56f86c-0758-428c-a154-74a9f4bd067b.png">
+
 Solution:
 
-
+In order to solve this issue, one must create the copy of the array and then iterate through both arrays to replace the first item in the main array with the corresponding item from the end from the copy array.
+<img width="396" alt="Screenshot 2023-01-26 at 2 43 14 PM" src="https://user-images.githubusercontent.com/43663025/214967368-f7734e2b-330a-4ef4-93ef-42f41576968a.png">
