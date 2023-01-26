@@ -30,5 +30,13 @@ Because of this error, one will see that the last term is copied once more to th
 
 Solution:
 
-In order to solve this issue, one must create the copy of the array and then iterate through both arrays to replace the first item in the main array with the corresponding item from the end from the copy array.
+In order to solve this issue, one must create the copy of the array and then iterate through both arrays to replace the first item in the main array with the corresponding item from the end from the copy array. One should add this code 
+
+       `
+        int[] copy = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+          copy[i] = arr[i];
+        }
+        `
+<div></div>
 <img width="396" alt="Screenshot 2023-01-26 at 2 43 14 PM" src="https://user-images.githubusercontent.com/43663025/214967368-f7734e2b-330a-4ef4-93ef-42f41576968a.png">
