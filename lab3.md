@@ -5,7 +5,7 @@ skill-demo1-data/written_2/travel_guides/berlitz1/HandRHawaii.txt
 find skill-demo1-data/written_2/ -name Bahamas-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
 
-
+<div></div>
 
 
 find skill-demo1-server/skill-demo1-data/written_2/ -empty
@@ -14,7 +14,7 @@ skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1/emptyFile.t
 find skill-demo1-data/written_2/ -empty
 <img width="657" alt="Screenshot 2023-02-08 at 1 57 14 PM" src="https://user-images.githubusercontent.com/43663025/217660383-b82b1d98-76be-486d-8306-25ec34d6f758.png">
 
-
+<div></div>
 
 
 find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
@@ -27,7 +27,7 @@ rm: remove regular file 'skill-demo1-data/written_2/travel_guides/berlitz1/Where
 <img width="900" alt="Screenshot 2023-02-08 at 2 02 24 PM" src="https://user-images.githubusercontent.com/43663025/217661218-1a52891c-fc07-4058-9f61-9efc986dacb6.png">
 
 
-
+<div></div>
 
 [cs15lwi23aio@ieng6-202]:skill-demo1-server:516$ find skill-demo1-data/written_2/ -type f -name "*.txt" -exec grep 'San Fernando Valley'  {} \;
         gift stores. Just north of Los Angeles, the San Fernando Valley’s main
