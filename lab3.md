@@ -7,11 +7,13 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
 
 <div></div>
 
+<div></div>
 
 find skill-demo1-server/skill-demo1-data/written_2/ -empty
 skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1/emptyFile.txt
 
 find skill-demo1-data/written_2/ -empty
+<div></div>
 <img width="657" alt="Screenshot 2023-02-08 at 1 57 14 PM" src="https://user-images.githubusercontent.com/43663025/217660383-b82b1d98-76be-486d-8306-25ec34d6f758.png">
 
 <div></div>
@@ -19,11 +21,12 @@ find skill-demo1-data/written_2/ -empty
 
 find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
 rm: remove regular empty file 'skill-demo1-data/written_2/travel_guides/berlitz1/sample.txt'? y
+<div></div>
 <img width="821" alt="Screenshot 2023-02-08 at 2 00 58 PM" src="https://user-images.githubusercontent.com/43663025/217660993-6cfde5cf-370a-4320-835b-f9097f44275c.png">
 
 [cs15lwi23aio@ieng6-202]:skill-demo1-server:507$ find skill-demo1-data/written_2/ -name WhereToLosAngeles.txt -exec rm -i {} \; 
 rm: remove regular file 'skill-demo1-data/written_2/travel_guides/berlitz1/WhereToLosAngeles.txt'? y
-
+<div></div>
 <img width="900" alt="Screenshot 2023-02-08 at 2 02 24 PM" src="https://user-images.githubusercontent.com/43663025/217661218-1a52891c-fc07-4058-9f61-9efc986dacb6.png">
 
 
