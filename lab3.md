@@ -1,4 +1,6 @@
 
+"-name" Command is used to find the file with the name that is provided and the path that the file leads to
+
 find skill-demo1-data/written_2/ -name HandRHawaii.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/HandRHawaii.txt
 
