@@ -1,25 +1,45 @@
+# Name
 
-"-name" Command is used to find the file with the name that is provided and the path that the file leads to
+`-name` Command is used to find the file with the name that is provided and the path that the file leads to
 
-find skill-demo1-data/written_2/ -name HandRHawaii.txt
-skill-demo1-data/written_2/travel_guides/berlitz1/HandRHawaii.txt
+## Example 1:
 
-find skill-demo1-data/written_2/ -name Bahamas-History.txt
-skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
+`find skill-demo1-data/written_2/ -name HandRHawaii.txt
+skill-demo1-data/written_2/travel_guides/berlitz1/HandRHawaii.txt`
+
+One can enter the Command to find HandRHawaii.txt and have it return the path to the file named HandRHawaii.txt that was requested.
+
+## Example 2:
+
+`find skill-demo1-data/written_2/ -name Bahamas-History.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt`
+
+One can enter the Command to find Bahamas-History.txt and it returns the path to the file named Bahamas-History.txt that was requested.
+
+<div></div>
+
+<div></div>
+
+# Empty
+
+`-empty` Command is used to find the file(s) that are empty in the directory that was provided
+
+## Example 1:
+
+Once can create an empty file in `skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1` called emptyFile.txt. The command will find the file path. The path was returned.
+
+`find skill-demo1-server/skill-demo1-data/written_2/ -empty
+skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1/emptyFile.txt`
+
+## Example 2:
+
+The emptyFile that was created earlier was removed and this command was run and returned nothing.
+
+`find skill-demo1-data/written_2/ -empty`
 
 <div></div>
 
 <div></div>
-
-find skill-demo1-server/skill-demo1-data/written_2/ -empty
-skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1/emptyFile.txt
-
-find skill-demo1-data/written_2/ -empty
-<div></div>
-<img width="657" alt="Screenshot 2023-02-08 at 1 57 14 PM" src="https://user-images.githubusercontent.com/43663025/217660383-b82b1d98-76be-486d-8306-25ec34d6f758.png">
-
-<div></div>
-
 
 find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
 rm: remove regular empty file 'skill-demo1-data/written_2/travel_guides/berlitz1/sample.txt'? y
