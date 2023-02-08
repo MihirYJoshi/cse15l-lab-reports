@@ -101,4 +101,4 @@ Result:
 
 # Source
 
-The Source that was used for this document was Geeks for Geeks. More specifically this [Geeks for Geeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
+The Source that was used for this document was Geeks for Geeks. More specifically this [Geeks for Geeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/) page that includes information about the `find` command in the terminal
