@@ -42,19 +42,26 @@ The emptyFile that was created earlier was removed and this command was run and 
 <div></div>
 
 
+# Confirm Remove
 
-find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
-rm: remove regular empty file 'skill-demo1-data/written_2/travel_guides/berlitz1/sample.txt'? y
+`-name sample.txt -exec rm -i {} \;` This allows one to delete files with confirmation instead of immediately. This is good for using in bash scripts
+
+## Example 1
+
+`find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
+rm: remove regular empty file 'skill-demo1-data/written_2/travel_guides/berlitz1/sample.txt'? y`
+
+## Example 2
+
+`[cs15lwi23aio@ieng6-202]:skill-demo1-server:507$ find skill-demo1-data/written_2/ -name WhereToLosAngeles.txt -exec rm -i {} \; 
+rm: remove regular file 'skill-demo1-data/written_2/travel_guides/berlitz1/WhereToLosAngeles.txt'? y`
+
+
 <div></div>
-<img width="821" alt="Screenshot 2023-02-08 at 2 00 58 PM" src="https://user-images.githubusercontent.com/43663025/217660993-6cfde5cf-370a-4320-835b-f9097f44275c.png">
 
-[cs15lwi23aio@ieng6-202]:skill-demo1-server:507$ find skill-demo1-data/written_2/ -name WhereToLosAngeles.txt -exec rm -i {} \; 
-rm: remove regular file 'skill-demo1-data/written_2/travel_guides/berlitz1/WhereToLosAngeles.txt'? y
-<div></div>
-<img width="900" alt="Screenshot 2023-02-08 at 2 02 24 PM" src="https://user-images.githubusercontent.com/43663025/217661218-1a52891c-fc07-4058-9f61-9efc986dacb6.png">
+# Search Text Multiple Files
 
-
-<div></div>
+## Example 1
 
 [cs15lwi23aio@ieng6-202]:skill-demo1-server:516$ find skill-demo1-data/written_2/ -type f -name "*.txt" -exec grep 'San Fernando Valley'  {} \;
         gift stores. Just north of Los Angeles, the San Fernando Valley’s main
@@ -62,6 +69,8 @@ rm: remove regular file 'skill-demo1-data/written_2/travel_guides/berlitz1/Where
 The great mass of Los Angeles’s population lives in the sprawling suburbs of the valleys — the San Fernando Valley north of the Hollywood Hills and the San Gabriel Valley stretching east towards San Bernardino. It’s composed mainly of suburbs and uninspired strip centers (block-long low-rise shopping malls), but there are a few reasons to drop by.
 One of the most enjoyable is a tour of the film and television studios located in the San Fernando Valley. Two major TV networks — CBS and NBC — welcome you onto their sets for a look behind the scenes at some of America’s most popular TV shows. A limited number of tickets to live shows are available. Universal Studios Hollywood, just north of the Hollywood Freeway (either the Universal Center Drive or the Lankershim Boulevard exits), offers an elaborate tour in open trams. In the course of displays of special-effects trickery you’ll be attacked by the shark from Jaws, meet up with a three-story-tall King Kong, and be subjected to all the earthquakes, floods, and fires you ever saw in a disaster movie. You can also take a look behind the scenes and learn about techniques that are used to create film’s great illusions. The highlight is the Back To The Future ride. Seated in a flight simulator shaped like the famous time-traveling DeLorean car in the films, you will be taken on a hair-raising chase through time and space.
 [cs15lwi23aio@ieng6-202]:skill-demo1-server:517$ 
+
+## Example 2
 
 [cs15lwi23aio@ieng6-202]:skill-demo1-server:517$ find skill-demo1-data/written_2/ -type f -name "*.txt" -exec grep 'Orange County'  {} \;
         area and Orange County. All hotels are of a high standard, with private
