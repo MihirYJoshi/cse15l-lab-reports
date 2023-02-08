@@ -41,6 +41,8 @@ The emptyFile that was created earlier was removed and this command was run and 
 
 <div></div>
 
+
+
 find skill-demo1-data/written_2/ -name sample.txt -exec rm -i {} \; 
 rm: remove regular empty file 'skill-demo1-data/written_2/travel_guides/berlitz1/sample.txt'? y
 <div></div>
