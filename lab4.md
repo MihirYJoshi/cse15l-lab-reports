@@ -64,8 +64,20 @@ This ran this code which compiled:
 
 <img width="718" alt="Screenshot 2023-02-23 at 2 59 21 PM" src="https://user-images.githubusercontent.com/43663025/221049892-141928e4-6bc0-4567-b28c-7d41a560bb0c.png">
 
-To run the JUNIT Tests, I was able to use the arrow keys once again.
+To run the JUNIT Tests, I was able to use the arrow keys once again. This allowed the tests to run and pass:
 
 Kep Pressed: `<up><up><up><up><up><enter>`
 
 <img width="974" alt="Screenshot 2023-02-23 at 3 00 15 PM" src="https://user-images.githubusercontent.com/43663025/221050057-4765c509-431c-4e7c-acf3-c6386ae91217.png">
+
+Results:
+
+<img width="260" alt="Screenshot 2023-02-23 at 3 01 17 PM" src="https://user-images.githubusercontent.com/43663025/221050221-bc855750-64f7-4316-b421-ac06c34a250e.png">
+
+I now needed to add and commit the new files and changes that I made. The code I entered was: `git add --all` which added the files. I then entered `git commit` to commit them.
+
+This opened this file where I clicked "i" entered a commit message: "Fixed the errores in the file"
+
+<img width="476" alt="Screenshot 2023-02-23 at 3 04 34 PM" src="https://user-images.githubusercontent.com/43663025/221051119-24299557-51e5-46ed-b9f2-59d343d64efc.png">
+
+<img width="488" alt="Screenshot 2023-02-23 at 3 05 12 PM" src="https://user-images.githubusercontent.com/43663025/221051210-fefdb37e-b273-43bd-b6a6-c93935f9d27d.png">
