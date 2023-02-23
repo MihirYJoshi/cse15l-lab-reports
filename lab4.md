@@ -2,6 +2,7 @@
 I first SSH into my ieng6 server. Since I had previously done this, I was able to use my arrow keys and click the up arrow 3 times for this to pop up. I then pressed enter to run the command. Since I changed the access to public, I was able to log in immediately. 
 
 Keys Pressed: `<up><up><up><enter>`
+History: `ssh cs15lwi23aio@ieng6.ucsd.edu`
 
 <img width="402" alt="Screenshot 2023-02-23 at 2 19 46 PM" src="https://user-images.githubusercontent.com/43663025/221043571-6afb84af-15ef-46be-bdb3-6457b30a0c93.png">
 
@@ -30,6 +31,8 @@ Result:
 I then needed to Run the Tests on the Repo and show that they fail. To do this I had to navigate to the repo and run the tests.
 
 Key Pressed: `<ls><cd> "l" <tab><enter>`
+Auto Filled: `lab7`
+
 This gave me this line:
 
 <img width="299" alt="Screenshot 2023-02-23 at 2 36 22 PM" src="https://user-images.githubusercontent.com/43663025/221046285-dd67fdd1-4055-45aa-a07a-cde9ab56f118.png">
@@ -49,6 +52,7 @@ This led to a failure in JUNIT:
 I needed to fix the code in order for the code to compile. To do this I needed to open the ListExamples.java file in a vi editor and fix the code error.
 
 Key Pressed: `<vi> "L" <tab> "." <tab><enter>`
+Auto Filled: `ListExamples.java`
 
 This resulted in this editor:
 
@@ -59,6 +63,7 @@ I then navigated to the error in the file, pressed "i" to insert and replaced `i
 I now needed to compile and run the tests on the new file. I was able to use the arrow keys to navigate through past commands and run the unit.
 
 Kep Pressed: `<up><up><up><up><up><enter>`
+History: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
 
 This ran this code which compiled: 
 
@@ -67,6 +72,7 @@ This ran this code which compiled:
 To run the JUNIT Tests, I was able to use the arrow keys once again. This allowed the tests to run and pass:
 
 Kep Pressed: `<up><up><up><up><up><enter>`
+History: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
 <img width="974" alt="Screenshot 2023-02-23 at 3 00 15 PM" src="https://user-images.githubusercontent.com/43663025/221050057-4765c509-431c-4e7c-acf3-c6386ae91217.png">
 
