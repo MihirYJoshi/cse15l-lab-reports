@@ -24,3 +24,13 @@ Keys Pressed: `<Command+V> <Control+A> <Git Clone> <enter>`
 Result:
 
 <img width="711" alt="Screenshot 2023-02-23 at 2 28 20 PM" src="https://user-images.githubusercontent.com/43663025/221045066-e008b803-2656-4bef-8807-d71e1098625f.png">
+
+<br>
+</br>
+I then needed to Run the Tests on the Repo and show that they fail. To do this I had to navigate to the repo and run the tests.
+
+Key Pressed: `<ls><cd> "l" <tab><enter>`
+This gave me this line:
+
+<img width="299" alt="Screenshot 2023-02-23 at 2 36 22 PM" src="https://user-images.githubusercontent.com/43663025/221046285-dd67fdd1-4055-45aa-a07a-cde9ab56f118.png">
+
