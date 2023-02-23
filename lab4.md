@@ -45,3 +45,27 @@ I then ran this command to run the JUNIT Tests for the Java Test file:
 This led to a failure in JUNIT:
 
 <img width="594" alt="Screenshot 2023-02-23 at 2 51 55 PM" src="https://user-images.githubusercontent.com/43663025/221048765-814e47b2-dc78-47f4-9198-f62d4ce593f0.png">
+
+I needed to fix the code in order for the code to compile. To do this I needed to open the ListExamples.java file in a vi editor and fix the code error.
+
+Key Pressed: `<vi> "L" <tab> "." <tab><enter>`
+
+This resulted in this editor:
+
+<img width="572" alt="Screenshot 2023-02-23 at 2 54 15 PM" src="https://user-images.githubusercontent.com/43663025/221049127-2f3a2dbc-4c38-4480-9f6f-dd92c7fa72ac.png">
+
+I then navigated to the error in the file, pressed "i" to insert and replaced `index1 += 1` with `index2 += 1` to ensure that it is incrementing the correct variable. I then pressed `<escape> :wq` to save and quit the file.
+
+I now needed to compile and run the tests on the new file. I was able to use the arrow keys to navigate through past commands and run the unit.
+
+Kep Pressed: `<up><up><up><up><up><enter>`
+
+This ran this code which compiled: 
+
+<img width="718" alt="Screenshot 2023-02-23 at 2 59 21 PM" src="https://user-images.githubusercontent.com/43663025/221049892-141928e4-6bc0-4567-b28c-7d41a560bb0c.png">
+
+To run the JUNIT Tests, I was able to use the arrow keys once again.
+
+Kep Pressed: `<up><up><up><up><up><enter>`
+
+<img width="974" alt="Screenshot 2023-02-23 at 3 00 15 PM" src="https://user-images.githubusercontent.com/43663025/221050057-4765c509-431c-4e7c-acf3-c6386ae91217.png">
