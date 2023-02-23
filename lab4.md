@@ -80,4 +80,8 @@ This opened this file where I clicked "i" entered a commit message: "Fixed the e
 
 <img width="476" alt="Screenshot 2023-02-23 at 3 04 34 PM" src="https://user-images.githubusercontent.com/43663025/221051119-24299557-51e5-46ed-b9f2-59d343d64efc.png">
 
+ I then pressed `<escape> :wq` to save and quit the file.
+
 <img width="488" alt="Screenshot 2023-02-23 at 3 05 12 PM" src="https://user-images.githubusercontent.com/43663025/221051210-fefdb37e-b273-43bd-b6a6-c93935f9d27d.png">
+
+Then the files were commited to the GitHub
