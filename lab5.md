@@ -1,85 +1,96 @@
-I first SSH into my ieng6 server. Since I had previously done this, I was able to use my arrow keys and click the up arrow 3 times for this to pop up. I then pressed enter to run the command. Since I changed the access to public, I was able to log in immediately.
+I would be able to run everything instantly by running all the tasks from lab 4 in a bash script.
 
-Keys Pressed: <up><up><up><enter> History: ssh cs15lwi23aio@ieng6.ucsd.edu
 
-Screenshot 2023-02-23 at 2 19 46 PM
+In Lab 4, I started with ssh-ing onto the ieng6 server. To do this, I would type in the command:
+  
+    ssh cs15lwi23aio@ieng6.ucsd.edu
+
+
+To create a bash script, I would first run this command in the terminal: `vi script.sh`
+
+In Lab 4, I then went to GitHub and copied the line under the SSH tab. I will do the same here to put into the script. I will first put git clone in front to be able to clone the repository:
+
+    git clone git@github.com:ucsd-cse15l-w23/lab7.git
+    
+This gives me this:
+
+![Screenshot 2023-03-07 at 9 50 00 PM](https://user-images.githubusercontent.com/43663025/223630172-bddd4f26-c3f1-43f5-9bca-3dc2f176d548.png)
+
+
+<img width="306" alt="Screenshot 2023-02-23 at 2 25 03 PM" src="https://user-images.githubusercontent.com/43663025/221044488-e1e5c051-5410-4291-88b5-49acce8dd7b0.png">
+
+I then pasted this line in the terminal along with `git clone` and pressed enter.
+
+Keys Pressed: `<Command+V> <Control+A> <Git Clone> <enter>`
+
+<img width="552" alt="Screenshot 2023-02-23 at 2 27 40 PM" src="https://user-images.githubusercontent.com/43663025/221044958-9849dc05-f42d-4e33-83ac-f5527d603712.png">
 
 Result:
 
-Screenshot 2023-02-23 at 2 23 07 PM
+<img width="711" alt="Screenshot 2023-02-23 at 2 28 20 PM" src="https://user-images.githubusercontent.com/43663025/221045066-e008b803-2656-4bef-8807-d71e1098625f.png">
 
-
-
-I then went to GitHub and copied the line under the SSH tab.
-Screenshot 2023-02-23 at 2 25 03 PM
-
-I then pasted this line in the terminal along with git clone and pressed enter.
-
-Keys Pressed: <Command+V> <Control+A> <Git Clone> <enter>
-
-Screenshot 2023-02-23 at 2 27 40 PM
-
-Result:
-
-Screenshot 2023-02-23 at 2 28 20 PM
-
-
-
+<br>
+</br>
 I then needed to Run the Tests on the Repo and show that they fail. To do this I had to navigate to the repo and run the tests.
-Key Pressed: <ls><cd> "l" <tab><enter> Auto Filled: lab7
+
+Key Pressed: `<ls><cd> "l" <tab><enter>`
+Auto Filled: `lab7`
 
 This gave me this line:
 
-Screenshot 2023-02-23 at 2 36 22 PM
+<img width="299" alt="Screenshot 2023-02-23 at 2 36 22 PM" src="https://user-images.githubusercontent.com/43663025/221046285-dd67fdd1-4055-45aa-a07a-cde9ab56f118.png">
 
 I then ran this command to compile all the .java files in the directory:
 
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
 
 I then ran this command to run the JUNIT Tests for the Java Test file:
 
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
 This led to a failure in JUNIT:
 
-Screenshot 2023-02-23 at 2 51 55 PM
+<img width="594" alt="Screenshot 2023-02-23 at 2 51 55 PM" src="https://user-images.githubusercontent.com/43663025/221048765-814e47b2-dc78-47f4-9198-f62d4ce593f0.png">
 
 I needed to fix the code in order for the code to compile. To do this I needed to open the ListExamples.java file in a vi editor and fix the code error.
 
-Key Pressed: <vi> "L" <tab> "." <tab><enter> Auto Filled: ListExamples.java
+Key Pressed: `<vi> "L" <tab> "." <tab><enter>`
+Auto Filled: `ListExamples.java`
 
 This resulted in this editor:
 
-Screenshot 2023-02-23 at 2 54 15 PM
+<img width="572" alt="Screenshot 2023-02-23 at 2 54 15 PM" src="https://user-images.githubusercontent.com/43663025/221049127-2f3a2dbc-4c38-4480-9f6f-dd92c7fa72ac.png">
 
-I then navigated to the error in the file, pressed "i" to insert and replaced index1 += 1 with index2 += 1 to ensure that it is incrementing the correct variable. I then pressed <escape> :wq to save and quit the file.
+I then navigated to the error in the file, pressed "i" to insert and replaced `index1 += 1` with `index2 += 1` to ensure that it is incrementing the correct variable. I then pressed `<escape> :wq` to save and quit the file.
 
 I now needed to compile and run the tests on the new file. I was able to use the arrow keys to navigate through past commands and run the unit.
 
-Kep Pressed: <up><up><up><up><up><enter> History: javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+Kep Pressed: `<up><up><up><up><up><enter>`
+History: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
 
-This ran this code which compiled:
+This ran this code which compiled: 
 
-Screenshot 2023-02-23 at 2 59 21 PM
+<img width="718" alt="Screenshot 2023-02-23 at 2 59 21 PM" src="https://user-images.githubusercontent.com/43663025/221049892-141928e4-6bc0-4567-b28c-7d41a560bb0c.png">
 
 To run the JUNIT Tests, I was able to use the arrow keys once again. This allowed the tests to run and pass:
 
-Kep Pressed: <up><up><up><up><up><enter> History: java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+Kep Pressed: `<up><up><up><up><up><enter>`
+History: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
-Screenshot 2023-02-23 at 3 00 15 PM
+<img width="974" alt="Screenshot 2023-02-23 at 3 00 15 PM" src="https://user-images.githubusercontent.com/43663025/221050057-4765c509-431c-4e7c-acf3-c6386ae91217.png">
 
 Results:
 
-Screenshot 2023-02-23 at 3 01 17 PM
+<img width="260" alt="Screenshot 2023-02-23 at 3 01 17 PM" src="https://user-images.githubusercontent.com/43663025/221050221-bc855750-64f7-4316-b421-ac06c34a250e.png">
 
-I now needed to add and commit the new files and changes that I made. The code I entered was: git add --all which added the files. I then entered git commit to commit them.
+I now needed to add and commit the new files and changes that I made. The code I entered was: `git add --all` which added the files. I then entered `git commit` to commit them.
 
 This opened this file where I clicked "i" entered a commit message: "Fixed the errores in the file"
 
-Screenshot 2023-02-23 at 3 04 34 PM
+<img width="476" alt="Screenshot 2023-02-23 at 3 04 34 PM" src="https://user-images.githubusercontent.com/43663025/221051119-24299557-51e5-46ed-b9f2-59d343d64efc.png">
 
-I then pressed <escape> :wq to save and quit the file.
+ I then pressed `<escape> :wq` to save and quit the file.
 
-Screenshot 2023-02-23 at 3 05 12 PM
+<img width="488" alt="Screenshot 2023-02-23 at 3 05 12 PM" src="https://user-images.githubusercontent.com/43663025/221051210-fefdb37e-b273-43bd-b6a6-c93935f9d27d.png">
 
 Then the files were commited to the GitHub
