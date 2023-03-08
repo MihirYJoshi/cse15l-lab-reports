@@ -16,81 +16,44 @@ This gives me this:
 
 ![Screenshot 2023-03-07 at 9 50 00 PM](https://user-images.githubusercontent.com/43663025/223630172-bddd4f26-c3f1-43f5-9bca-3dc2f176d548.png)
 
-
-<img width="306" alt="Screenshot 2023-02-23 at 2 25 03 PM" src="https://user-images.githubusercontent.com/43663025/221044488-e1e5c051-5410-4291-88b5-49acce8dd7b0.png">
-
-I then pasted this line in the terminal along with `git clone` and pressed enter.
-
-Keys Pressed: `<Command+V> <Control+A> <Git Clone> <enter>`
-
-<img width="552" alt="Screenshot 2023-02-23 at 2 27 40 PM" src="https://user-images.githubusercontent.com/43663025/221044958-9849dc05-f42d-4e33-83ac-f5527d603712.png">
-
-Result:
-
-<img width="711" alt="Screenshot 2023-02-23 at 2 28 20 PM" src="https://user-images.githubusercontent.com/43663025/221045066-e008b803-2656-4bef-8807-d71e1098625f.png">
-
 <br>
 </br>
-I then needed to Run the Tests on the Repo and show that they fail. To do this I had to navigate to the repo and run the tests.
+I then needed to Run the Tests on the Repo and show that they fail. To do this I had to navigate to the repo and run the tests. To do this in the script I typed in: 
 
-Key Pressed: `<ls><cd> "l" <tab><enter>`
-Auto Filled: `lab7`
+    cd lab7
+    
+I then needed to compile all the .java files in the directory, so I added this to the script:
 
-This gave me this line:
+    javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 
-<img width="299" alt="Screenshot 2023-02-23 at 2 36 22 PM" src="https://user-images.githubusercontent.com/43663025/221046285-dd67fdd1-4055-45aa-a07a-cde9ab56f118.png">
+I then added this command to run the JUNIT Tests for the Java Test file:
 
-I then ran this command to compile all the .java files in the directory:
+    java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 
-`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
-
-I then ran this command to run the JUNIT Tests for the Java Test file:
-
-`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
-
-This led to a failure in JUNIT:
+These two commands compile the files and run the JUNIT tests. This led to a failure in JUNIT:
 
 <img width="594" alt="Screenshot 2023-02-23 at 2 51 55 PM" src="https://user-images.githubusercontent.com/43663025/221048765-814e47b2-dc78-47f4-9198-f62d4ce593f0.png">
 
-I needed to fix the code in order for the code to compile. To do this I needed to open the ListExamples.java file in a vi editor and fix the code error.
+I needed to fix the code in order for the code to compile. To do this I needed to open the ListExamples.java file and fix the code error. For the code to work properly, I need to replace the last instance of `index1 += 1` with `index2 += 1`. To do this, I need to run a command that replaces the 3rd instance in a file. To do this, I used a sed command:
 
-Key Pressed: `<vi> "L" <tab> "." <tab><enter>`
-Auto Filled: `ListExamples.java`
+    sed -i '' '0,/index1 += 1/{/index1 += 1/{n;/index1 += 1/{s/index1 += 1/index2 += 1/;}}}' ListExamples.java
+    
+I then needed to compile all the .java files in the directory, so I added this to the script:
 
-This resulted in this editor:
+    javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 
-<img width="572" alt="Screenshot 2023-02-23 at 2 54 15 PM" src="https://user-images.githubusercontent.com/43663025/221049127-2f3a2dbc-4c38-4480-9f6f-dd92c7fa72ac.png">
+I then added this command to run the JUNIT Tests for the Java Test file:
 
-I then navigated to the error in the file, pressed "i" to insert and replaced `index1 += 1` with `index2 += 1` to ensure that it is incrementing the correct variable. I then pressed `<escape> :wq` to save and quit the file.
+    java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 
-I now needed to compile and run the tests on the new file. I was able to use the arrow keys to navigate through past commands and run the unit.
+These two commands compile the files and run the JUNIT tests. This led to both tests passing JUNIT:
 
-Kep Pressed: `<up><up><up><up><up><enter>`
-History: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+![Screenshot 2023-03-07 at 10 22 29 PM](https://user-images.githubusercontent.com/43663025/223635174-9dd372b3-ba66-492b-8d06-50ea9321bc44.png)
 
-This ran this code which compiled: 
+I now needed to add and commit the new files and changes that I made. The line I needed to enter in the bash script to add and commit the files were: 
 
-<img width="718" alt="Screenshot 2023-02-23 at 2 59 21 PM" src="https://user-images.githubusercontent.com/43663025/221049892-141928e4-6bc0-4567-b28c-7d41a560bb0c.png">
-
-To run the JUNIT Tests, I was able to use the arrow keys once again. This allowed the tests to run and pass:
-
-Kep Pressed: `<up><up><up><up><up><enter>`
-History: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
-
-<img width="974" alt="Screenshot 2023-02-23 at 3 00 15 PM" src="https://user-images.githubusercontent.com/43663025/221050057-4765c509-431c-4e7c-acf3-c6386ae91217.png">
-
-Results:
-
-<img width="260" alt="Screenshot 2023-02-23 at 3 01 17 PM" src="https://user-images.githubusercontent.com/43663025/221050221-bc855750-64f7-4316-b421-ac06c34a250e.png">
-
-I now needed to add and commit the new files and changes that I made. The code I entered was: `git add --all` which added the files. I then entered `git commit` to commit them.
-
-This opened this file where I clicked "i" entered a commit message: "Fixed the errores in the file"
-
-<img width="476" alt="Screenshot 2023-02-23 at 3 04 34 PM" src="https://user-images.githubusercontent.com/43663025/221051119-24299557-51e5-46ed-b9f2-59d343d64efc.png">
-
- I then pressed `<escape> :wq` to save and quit the file.
-
-<img width="488" alt="Screenshot 2023-02-23 at 3 05 12 PM" src="https://user-images.githubusercontent.com/43663025/221051210-fefdb37e-b273-43bd-b6a6-c93935f9d27d.png">
+    git add --all
+    
+    git commit -m "commit"
 
 Then the files were commited to the GitHub
